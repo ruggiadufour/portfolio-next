@@ -1,0 +1,202 @@
+.column {
+    box-shadow:none!important;
+    background-color: rgba(68, 67, 67, 0)!important;
+    /* backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);     */
+    transition: background-color .7s;
+    align-items: center!important;
+}
+.hover-orange:hover{
+    background-color: #bd26003a!important;   
+}
+.card{
+    background-color: rgba(0, 0, 0, 0)!important; 
+    box-shadow: none!important;
+}
+.card img {
+    padding: 10px;
+}
+ 
+.init{
+    /* background-image: url(../images/init.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #1c2833;
+    background-blend-mode: soft-light;
+}
+#about{
+    /*background-image: url(../images/about.jpg);*/
+    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about__img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: .65;
+}
+#knowledge{
+    /* background-color: #0e0e0e; */
+    background-position: center;
+    background-size: cover;
+}
+#portfolio{
+    /*background-image: url(../images/portfolio.png);*/
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#contact{
+    /*background-image: url(../images/portfolio.png);*/
+    background-position: center;
+    background-size: cover;  
+}
+.v-h {
+    position: absolute !important;
+    height: 1px; 
+    width: 1px; 
+    display: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.circle{
+    border-radius: 50%!important;
+}
+.element-contact{
+    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    border-radius: 3px;
+    max-width: 500px;
+    margin: auto!important;
+    margin-bottom: 10px!important;
+}
+.project{
+    background-color: rgba(0, 0, 0, 0.2);    
+    border-radius: 7px;
+    margin-bottom: 10px!important;
+}
+
+.imagen{
+    width: 100%;
+    opacity: .4;
+}
+.github-card{
+    width: 250px!important;
+    height: 250px!important;
+}
+
+.image-repo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.color-text{
+    color: #ff3d00!important;
+}
+.color-text-2{
+    color: #dd2c00!important;
+}
+.color-text-3{
+    color: #bf360c!important;
+}
+.color-black-text{
+    color: rgb(13, 20, 27)!important;
+}
+
+.background-color{
+    background-color: #17202ad2!important;
+}
+
+.bg-gray-trans{
+    background-color: rgba(41, 40, 40, 0.295)!important;
+    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px)!important;
+}
+
+.m20{
+    margin:0px 20px;
+}
+
+.gears{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+}
+
+
+
+#gear1{
+    top: 50%;
+    left: 50%;
+
+    animation: rotate2 .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+#gear2{
+    top: 125px;
+    left: 50%;
+
+    animation: rotate1 .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+#gear3{
+    top: 175px;
+    left: 425px;
+
+    animation: rotate2 .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+#gear4{
+    top: 375px;
+    left: 525px;
+
+    animation: rotate1 .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+.gear{
+    position: absolute;
+    opacity: .55;
+}
+
+
+.poligon1, .poligon2, .poligon3, .poligon4{
+    width: 100%;
+    height: 200px;
+    background-color: #bd2600;
+    position: absolute;
+}
+.poligon1{
+    clip-path: polygon(25% 26%, 100% 0, 100% 60%, 71% 44%, 30% 53%, 0% 60%, 0 13%);
+
+}
+.poligon2{
+    clip-path: polygon(39% 33%, 100% 37%, 100% 60%, 69% 66%, 33% 70%, 0% 60%, 0 18%);
+}
+.poligon3{
+    clip-path: polygon(55% 24%, 100% 38%, 100% 76%, 0 53%, 0 30%);
+}
+.poligon4{
+    clip-path: polygon(15% 4%, 31% 7%, 56% 6%, 100% 0, 80% 41%, 22% 66%, 0 100%, 0 0);
+}

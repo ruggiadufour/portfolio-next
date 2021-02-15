@@ -1,0 +1,107 @@
+.main {
+  margin: 60px 5px 10px 5px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  min-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  min-width: 900px;
+  width: 60%;
+  backdrop-filter: grayscale(0.7) opacity(0.6) blur(2px);
+  border-radius: 5px;
+  z-index: 2;
+  display: flex;
+  margin: 5px;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.7)
+  );
+  border-radius: 5px 0px 0px 5px;
+  width: 50%!important;
+}
+
+.profile_img {
+  margin-top: 25px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.p_info {
+  display: flex;
+  padding: 0px 15px 15px 15px;
+  justify-items: left;
+  align-items: center;
+}
+
+.flex_col {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info_img {
+  width: 50px;
+  height: 50px;
+  padding-right: 7px;
+}
+/*End of left side*/
+.section {
+  flex: 2;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.status {
+  margin-bottom: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 2px;
+
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.027);
+  justify-content: space-between;
+  width: auto !important;
+}
+
+.card_info {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px 15px 15px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 15px;
+}

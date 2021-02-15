@@ -1,0 +1,32 @@
+[
+  {
+    "src": "/images/csshtml.png",
+    "alt": "html-and-css-logo",
+    "text": "HTML and CSS"
+  },
+  {
+    "src": "/images/js.png",
+    "alt": "javascript-logo",
+    "text": "Javascript"
+  },
+  {
+    "src": "/images/react.png",
+    "alt": "react-logo",
+    "text": "React.js"
+  },
+  {
+    "src": "/images/nextjs.png",
+    "alt": "next-logo",
+    "text": "Next.js"
+  },
+  {
+    "src": "/images/strapi.png",
+    "alt": "strapi-logo",
+    "text": "Strapi"
+  },
+  {
+    "src": "/images/mysql_workbench.png",
+    "alt": "mysql-workbench-logo",
+    "text": "MySQL Workbench"
+  }
+]
