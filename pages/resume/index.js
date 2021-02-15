@@ -8,7 +8,7 @@ import projects_data from '../../static_data/projects_data.json'
 
 export default function Resume() {
     const tools = tools_data
-    const projects = projects_data;
+    const projects = [...projects_data.primary, ...projects_data.extra];
 
     return (
     <div>
@@ -18,7 +18,7 @@ export default function Resume() {
         <meta name="description" content="Angel Ruggia Dufour's resume." />
         <meta
           name="keywords"
-          content="Ruggia, Dufour, Angel, Resume, Curriculum, Viate, Experience, Knowledge, Tools"
+          content="Ruggia, Dufour, Angel, Resume, Curriculum, Vitae, Experience, Knowledge, Tools"
         />
         <meta name="author" content="Angel Ruggia Dufour" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +27,7 @@ export default function Resume() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
       </Head>
 
-      <main className={styles.main} id="cv">
+      <main className={`${styles.main} background-color4`}>
         <section id="glass" className={styles.glass}>
           <div className={styles.dashboard}>
             <div>
@@ -187,29 +187,26 @@ export default function Resume() {
       <style jsx>{`
         
         #glass{
-          background: ${constants.colors.background1};
-        }
-        #cv{
-          background-color: ${constants.colors.background2};
+          background: ${constants.dark_theme.colors.background4};
         }
         :global(a:visited) {
-          color: ${constants.colors.primary};
+          color: ${constants.dark_theme.colors.primary};
         }
         :global(h1) {
           font-weight: 600;
           font-size: 2rem;
           opacity: 0.8;
-          color: ${constants.colors.secondary};
+          color: ${constants.dark_theme.colors.secondary};
         }
         :global(h2, a, .paragraph_info){
           font-size: 17px;
           opacity: 0.8;
-          color: ${constants.colors.secondary};
+          color: ${constants.dark_theme.colors.secondary};
           margin-left: 5px;
         }
        
         :global(h3) {
-          color: ${constants.colors.third};
+          color: ${constants.dark_theme.colors.third};
           font-size: 15px;
           font-weight: 400;
           opacity: 0.8;
@@ -226,7 +223,7 @@ export default function Resume() {
         hr {
           margin: 0;
           padding: 0;
-          border: 1px solid ${constants.colors.primary};
+          border: 1px solid ${constants.dark_theme.colors.primary};
         }
       `}</style>
     </div>

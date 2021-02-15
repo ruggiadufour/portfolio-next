@@ -1,10 +1,11 @@
-import styles from "../styles/About.module.css";
 import Link from "next/link";
-export default function Nav() {
+import Image from "next/image";
+
+export default function Nav({ changeTheme, theme }) {
   return (
     <header>
       <nav
-        className="navbar is-fixed-top is-dark background-color"
+        className="navbar is-fixed-top nav-hover background-color3"
         aria-label="main navigation"
       >
         <div className="container">
@@ -44,10 +45,25 @@ export default function Nav() {
               <Link href="/resume">
                 <a className="navbar-item color-text">Resume</a>
               </Link>
+              <i className="theme_selector" onClick={changeTheme}>
+                <Image
+                  src={theme ? "/images/sun.png" : "/images/moon.png"}
+                  alt="icon-theme"
+                  width={35}
+                  height={35}
+                />
+              </i>
             </div>
           </div>
         </div>
       </nav>
+
+      <style jsx>{`
+        .theme_selector {
+          margin-top: 10px;
+          cursor: pointer;
+        }
+      `}</style>
     </header>
   );
 }

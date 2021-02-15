@@ -1,9 +1,7 @@
-import { useEffect } from "react";
-import constants from "../../styles/constants";
 export default function Section({ children, add_class }) {
   return (
     <>
-      <section id={add_class} className={`hero  is-fullheight ${add_class ? add_class : ""}`}>
+      <section id={add_class} className={`hero is-fullheight background-color1 ${add_class ? add_class : ""}`}>
         <div className="hero-body">
           <div className="container2">
             {children}
@@ -11,9 +9,6 @@ export default function Section({ children, add_class }) {
         </div>
       </section>
       <style jsx>{`
-        section {
-          background-color: ${constants.colors.background3};
-        }
         .info{
           font-weight: 500;
         }
@@ -22,7 +17,6 @@ export default function Section({ children, add_class }) {
           background-position: center;
           background-size: cover;
           background-attachment: fixed;
-          
           background-blend-mode: soft-light;
         }
         .container2 {

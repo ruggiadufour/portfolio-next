@@ -10,7 +10,7 @@ export default function About() {
   const tools = tools_data;
   return (
     <>
-      <Gears />
+      <Gears />     
       <Section add_class="intro">
         <div className="flex_items is-rounded">
           <Image
@@ -34,7 +34,7 @@ export default function About() {
       </Section>
 
       <div className="poligon_container">
-        <div className="poligon1"></div>
+        <div className="poligon1 background-color2"></div>
       </div>
 
       <Section add_class="info">
@@ -103,8 +103,7 @@ export default function About() {
           margin-top: 3rem;
           width: 100%;
           padding-left: 10px;
-          border-left: solid 3px ${constants.colors.secondary};
-          
+          border-left: solid 3px ${constants.dark_theme.colors.secondary};  
         }
         .poligon_container {
           position: relative;
@@ -128,9 +127,9 @@ export default function About() {
         .poligon1 {
           width: 100%;
           height: 200px;
-          background-color: #bd2600;
           position: absolute;
           top: -70px;
+          
         }
         .poligon1 {
           clip-path: polygon(

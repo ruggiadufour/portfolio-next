@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="background-color flex-items">
+      <footer className="background-color3 flex-items">
         <div className="item">
           <a
             id="github"
