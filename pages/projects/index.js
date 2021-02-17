@@ -12,11 +12,11 @@ export default function Projects() {
         <link rel="icon" href="images/favicon.svg" />
         <meta
           name="description"
-          content="Angel Ruggia Dufour's projects information."
+          content="Here you'll find all about the projects that Angel Ruggia Dufour has made and why he did them."
         />
         <meta
           name="keywords"
-          content="Angel, Ruggia, Dufour, Projects, Works, Frontend"
+          content="Angel, Ruggia, Dufour, Projects, Works, Frontend, experience"
         />
         <meta name="author" content="Angel Ruggia Dufour" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

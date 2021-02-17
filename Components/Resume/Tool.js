@@ -1,6 +1,6 @@
 import styles from "../../styles/Resume.module.css";
 
-export default function Tools({src, alt, text}){
+export default function Tool({src, alt, text}){
     return(
         <div className={styles.p_info}>
             <img

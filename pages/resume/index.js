@@ -15,7 +15,7 @@ export default function Resume() {
       <Head>
         <meta charset="UTF-8" />
         <link rel="icon" href="images/svg/profile.svg" />
-        <meta name="description" content="Angel Ruggia Dufour's resume." />
+        <meta name="description" content="Know all about Angel Ruggia Dufour, here you'll find all the information about his career and life." />
         <meta
           name="keywords"
           content="Ruggia, Dufour, Angel, Resume, Curriculum, Vitae, Experience, Knowledge, Tools"

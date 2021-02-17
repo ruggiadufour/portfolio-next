@@ -32,6 +32,11 @@ export default function Footer() {
         </div>
       </footer>
       <style jsx>{`
+        footer{
+          
+          bottom: 0;
+          width: 100%;
+        }
         a {
           margin: 10px;
         }

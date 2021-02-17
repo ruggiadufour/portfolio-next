@@ -1,7 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Nav({ changeTheme, theme }) {
+  useEffect(() => {
+    // Get all "navbar-burger" elements
+    const navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+
+    // Check if there are any navbar burgers
+    if (navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = document.getElementById(el.dataset.target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          target.classList.toggle("is-active");
+        });
+      });
+    }
+  }, []);
+
   return (
     <header>
       <nav
@@ -15,6 +39,16 @@ export default function Nav({ changeTheme, theme }) {
                 <strong>Angel Ruggia Dufour</strong>
               </a>
             </Link>
+
+            <i className="theme_selector " onClick={changeTheme}>
+              <Image
+                src={theme ? "/images/sun.png" : "/images/moon.png"}
+                alt="icon-theme"
+                width={35}
+                height={35}
+              />
+            </i>
+
             <a
               role="button"
               className="navbar-burger is-dark"
@@ -26,6 +60,7 @@ export default function Nav({ changeTheme, theme }) {
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </a>
+            
           </div>
 
           <div id="navMenu" className="navbar-menu ">
@@ -45,14 +80,6 @@ export default function Nav({ changeTheme, theme }) {
               <Link href="/resume">
                 <a className="navbar-item color-text">Resume</a>
               </Link>
-              <i className="theme_selector" onClick={changeTheme}>
-                <Image
-                  src={theme ? "/images/sun.png" : "/images/moon.png"}
-                  alt="icon-theme"
-                  width={35}
-                  height={35}
-                />
-              </i>
             </div>
           </div>
         </div>

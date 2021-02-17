@@ -1,15 +1,18 @@
 export default function Section({ children, add_class }) {
   return (
     <>
-      <section id={add_class} className={`hero is-fullheight background-color1 ${add_class ? add_class : ""}`}>
+      <section
+        id={add_class}
+        className={`hero is-fullheight background-color1 ${
+          add_class ? add_class : ""
+        }`}
+      >
         <div className="hero-body">
-          <div className="container2">
-            {children}
-          </div>
+          <div className="container2">{children}</div>
         </div>
       </section>
       <style jsx>{`
-        .info{
+        .info {
           font-weight: 500;
         }
         .intro {

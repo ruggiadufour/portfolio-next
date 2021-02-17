@@ -10,13 +10,12 @@ export default function About() {
   const tools = tools_data;
   return (
     <>
-      <Gears />     
+      <Gears />
       <Section add_class="intro">
         <div className="flex_items is-rounded">
           <Image
             src="/images/svg/profile.svg"
             alt="Profile"
-            
             width={128}
             height={128}
           />
@@ -60,13 +59,7 @@ export default function About() {
             <div className="flex_items">
               {tools.map((tool, i) => (
                 <div key={i} className="item ">
-                  
-                  <Image
-                    src={tool.src} alt={tool.alt}
-                    
-                    width={45}
-                    height={45}
-                  />
+                  <Image src={tool.src} alt={tool.alt} width={45} height={45} />
                   <p className="title is-4 color-text-3">{tool.text}</p>
                 </div>
               ))}
@@ -80,7 +73,9 @@ export default function About() {
             <p className="is-size-4 subtitle color-text-3">
               Please contact me{" "}
               <Link href="/contact">
-                <a><strong className="is-size-4 color-text">through.</strong></a>
+                <a>
+                  <strong className="is-size-4 color-text">through.</strong>
+                </a>
               </Link>
             </p>
           </div>
@@ -96,14 +91,14 @@ export default function About() {
       </Section>
 
       <style jsx>{`
-        #hello{
-          z-index:100;
+        #hello {
+          z-index: 100;
         }
         .tools {
           margin-top: 3rem;
           width: 100%;
           padding-left: 10px;
-          border-left: solid 3px ${constants.dark_theme.colors.secondary};  
+          border-left: solid 3px ${constants.dark_theme.colors.secondary};
         }
         .poligon_container {
           position: relative;
@@ -115,21 +110,20 @@ export default function About() {
           flex-wrap: wrap;
           align-items: center;
           max-width: 900px;
-          z-index:100;
+          z-index: 100;
         }
         .about__img {
           position: absolute;
           right: 0;
           bottom: -95%;
           opacity: 0.55;
-          z-index:0;
+          z-index: 0;
         }
         .poligon1 {
           width: 100%;
           height: 200px;
           position: absolute;
           top: -70px;
-          
         }
         .poligon1 {
           clip-path: polygon(

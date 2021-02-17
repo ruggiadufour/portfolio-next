@@ -14,9 +14,15 @@ function MyApp({ Component, pageProps }) {
   return <>
     <Theme settedTheme={theme}>
       <Nav changeTheme={changeTheme} theme={theme}/>
+      <div className="init">
         <Component {...pageProps} />
+
+      </div>
       <Footer/>
     </Theme>
+    <style jsx>{`
+      
+      `}</style>
   </>
 }
 
