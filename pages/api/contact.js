@@ -2,6 +2,11 @@ const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 
 export default (req, res) => {
+  if(!process.env.CLIENT_ID && !process.env.CLIENT_SECRET && !process.env.REDIRECT_URI && !process.env.REFRESH_TOKEN){
+    console.log("no")
+    return res.status(500).send('Something broke!');
+  }
+
   const oAuth2Client = new google.auth.OAuth2(
     process.env.CLIENT_ID,
     process.env.CLIENT_SECRET,
@@ -40,7 +45,6 @@ export default (req, res) => {
 
       const result = await transporter.sendMail(mailOptions);
       console.log(result)
-
       return result;
     } catch (error) {
       console.log(error); 

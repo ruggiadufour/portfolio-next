@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <link rel="icon" href="images/favicon.svg" />
         <meta
           name="description"

@@ -2,11 +2,12 @@
   "primary": [
     {
       "title": "Servia",
-      "long_desc": "The final project for my university degree in systemsanalyst, is about a home services search website, there people can find workers of plumbing, builders, maids, etc. I have developed it with aclass mate. We chose React.js and Material UI for frontendand Strapi (headless CMS) and MySQL for backend.",
+      "long_desc": "The final project for my university degree in system analyst, is about a home services search website, there people can find workers of plumbing, builders, maids, etc. I have developed it with aclass mate. We chose React.js and Material UI for frontendand Strapi (headless CMS) and MySQL for backend.",
       "short_desc": "Web-app for publishing and requesting home services",
       "site": "https://instyc.github.io/App-Servicios/",
       "repo": "",
-      "src":"/images/servia.png"
+      "src":"/images/servia.png",
+      "url":"/servia"
     },
     {
       "title": "Sports Club shifts",
@@ -14,7 +15,8 @@
       "short_desc": "Shift website for sports fields.",
       "site": "https://complejodeportivo-sb.com.ar",
       "repo": "",
-      "src":"/images/complejo.png"
+      "src":"/images/complejo.png",
+      "url":"/sports-club-shifts"
     }
   ],
   "extra": [
@@ -24,7 +26,8 @@
       "short_long_desc": "",
       "site": "https://ruggiadufour.github.io/BlackJack/",
       "repo": "",
-      "src":""
+      "src":"",
+      "url":"/"
     },
     {
       "title": "Learning material system",
@@ -32,7 +35,8 @@
       "short_desc": "",
       "site": "",
       "repo": "",
-      "src":""
+      "src":"",
+      "url":"/"
     }
   ]
 }

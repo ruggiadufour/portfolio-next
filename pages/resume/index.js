@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from 'next/image'
 import styles from "../../styles/Resume.module.css";
 import constants from '../../styles/constants'
 import Tool from '../../Components/Resume/Tool'
@@ -13,7 +14,7 @@ export default function Resume() {
     return (
     <div>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <link rel="icon" href="images/svg/profile.svg" />
         <meta name="description" content="Know all about Angel Ruggia Dufour, here you'll find all the information about his career and life." />
         <meta
@@ -32,65 +33,72 @@ export default function Resume() {
           <div className={styles.dashboard}>
             <div>
               <div className={styles.user}>
-                <img
-                  src="./images/svg/profile.svg"
-                  className={styles.profile_img}
+              
+                <Image
+                  src="/images/svg/profile.svg"
                   alt="profile-image"
-                  width="50px"
-                  height="50px"
+                  width={150}
+                  height={150}
                 />
+               
                 <h2>Angel Ruggia Dufour</h2>
                 <p>System Analyst - Front-end developer</p>
               </div>
               <div className={styles.p_info}>
-                <img
-                  src="./images/loc.png"
-                  className={styles.info_img}
+                <Image
+                  src="/images/loc.png"
+                  width={80}
+                  height={80}
                   alt="location-icon"
                 />
                 <p className="paragraph_info">Presidencia Roque Saenz Peña - Chaco - Argentina</p>
               </div>
               <div className={styles.p_info}>
-                <img
-                  src="./images/bd.png"
-                  className={styles.info_img}
-                  alt="birthday-icon"
+                <Image
+                  src="/images/bd.png"
+                  width={45}
+                  height={45}
+                  alt="birthday icon"
                 />
                 <p className="paragraph_info">16/05/1998</p>
               </div>
               <div className={styles.p_info}>
-                <img
-                  src="./images/email.png"
-                  className={styles.info_img}
-                  alt="email-icon"
+                <Image
+                  src="/images/email.png"
+                  width={80}
+                  height={80}
+                  alt="email icon"
                 />
                 <p className="paragraph_info">angelruggia@gmail.com</p>
               </div>
               <div className={styles.p_info}>
-                <img
-                  src="./images/portfolio-info.png"
-                  className={styles.info_img}
-                  alt="portfolio-icon"
+                <Image
+                  src="/images/portfolio-info.png"
+                  width={45}
+                  height={45}
+                  alt="portfolio icon"
                 />
                 <a href="https://angelruggia.ar" target="_blank">
                   angelruggia.ar
                 </a>
               </div>
               <div className={styles.p_info}>
-                <img
-                  src="./images/github-info.png"
-                  className={styles.info_img}
-                  alt="github-icon"
+                <Image
+                  src="/images/github-info.png"
+                  width={80}
+                  height={80}
+                  alt="github icon"
                 />
                 <a href="https://github.com/ruggiadufour/" target="_blank">
                   github.com/ruggiadufour
                 </a>
               </div>
               <div className={styles.p_info}>
-                <img
-                  src="./images/linkedin-info.png"
-                  className={styles.info_img}
-                  alt="linkedin-icon"
+                <Image
+                  src="/images/linkedin-info.png"
+                  width={45}
+                  height={45}
+                  alt="linkedin icon"
                 />
                 <a
                   href="https://www.linkedin.com/in/angel-ruggia-dufour-1608b815a/"

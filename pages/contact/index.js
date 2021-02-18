@@ -36,7 +36,7 @@ export default function Contact() {
       .catch((error) => {
         console.log(error);
         setLoading(false)
-        setAlert("❌ Oh something went wrong, your message couldn't be sent 😥")
+        setAlert("❌ Oh no something went wrong, your message couldn't be sent 😥")
       });
   }
 
@@ -49,7 +49,7 @@ export default function Contact() {
   return (
     <>
     <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <link rel="icon" href="images/favicon.svg" />
         <meta name="description" content="Send a message to Angel Ruggia Dufour, then he will reply you as soon as he can." />
         <meta
@@ -99,7 +99,7 @@ export default function Contact() {
             {
               alert!=="" && <p>{alert}</p>
             }
-            <Button text="Send" type="submit" className={loading?"button is-loading":null}/>
+            <Button disabled={loading} text="Send" type="submit" className={loading?"button is-loading":null}/>
 
             <p className="is-text-3 subtitle color-text-3">If you want to contact me directly you can do it through <strong className="color-text">angelruggia@gmail.com</strong> </p>
           </form>

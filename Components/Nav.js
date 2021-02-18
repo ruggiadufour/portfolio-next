@@ -40,14 +40,14 @@ export default function Nav({ changeTheme, theme }) {
               </a>
             </Link>
 
-            <i className="theme_selector " onClick={changeTheme}>
-              <Image
-                src={theme ? "/images/sun.png" : "/images/moon.png"}
-                alt="icon-theme"
-                width={35}
-                height={35}
-              />
-            </i>
+            <div
+              className="select_theme background-color1"
+              onClick={changeTheme}
+            >
+              <span className={`theme_selector ${theme ? "right" : "left"}`}>
+                {theme ? "🌚" : "🌞"}
+              </span>
+            </div>
 
             <a
               role="button"
@@ -60,7 +60,6 @@ export default function Nav({ changeTheme, theme }) {
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </a>
-            
           </div>
 
           <div id="navMenu" className="navbar-menu ">
@@ -87,8 +86,28 @@ export default function Nav({ changeTheme, theme }) {
 
       <style jsx>{`
         .theme_selector {
-          margin-top: 10px;
+          font-size: 20px;
+          position: absolute;
+
+          -moz-user-select: none;
+          -khtml-user-select: none;
+          -webkit-user-select: none;
+        }
+        .left {
+          left: 0;
+        }
+        .right {
+          right: 0;
+        }
+        .select_theme {
           cursor: pointer;
+          width: 55px;
+          height: 30px;
+          margin-top: 10px;
+          position: relative;
+          border-radius: 30px;
+          display: flex;
+          align-items: center;
         }
       `}</style>
     </header>

@@ -37,6 +37,7 @@ export default function TextBox({ placeholder, onChange, type, required, value }
           width: 100%;
           margin-bottom: 15px;
           border: solid thin orangered;
+          border-radius: 3px;
         }
         input:focus,
         textarea:focus {

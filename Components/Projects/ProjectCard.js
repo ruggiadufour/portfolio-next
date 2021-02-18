@@ -1,8 +1,14 @@
 import Image from "next/image";
-export default function ProjectCard({title, short_desc, src}) {
+import {useRouter} from "next/router"
+
+export default function ProjectCard({title, short_desc, src, url}) {
+  const router = useRouter()
+  function seeMore(){
+    router.push(`projects${url}`)
+  }
   return (
     <>
-      <div className="p-card ">
+      <div className="p-card " onClick={seeMore}>
         <div className="container_imagen">
           <Image
             layout="intrinsic"
