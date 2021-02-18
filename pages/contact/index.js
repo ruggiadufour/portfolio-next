@@ -66,7 +66,7 @@ export default function Contact() {
         <div className="flex-items">
           <form onSubmit={send}>
             <h1 className="is-text-2 color-text-2 title">Contact me:</h1>
-
+            
             <h2 className="color-text-2">Your name</h2>
             <Textbox
               type="text"
@@ -100,6 +100,8 @@ export default function Contact() {
               alert!=="" && <p>{alert}</p>
             }
             <Button text="Send" type="submit" className={loading?"button is-loading":null}/>
+
+            <p className="is-text-3 subtitle color-text-3">If you want to contact me directly you can do it through <strong className="color-text">angelruggia@gmail.com</strong> </p>
           </form>
         </div>
       </Section>

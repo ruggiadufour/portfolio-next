@@ -12,6 +12,7 @@ export default function Button({ text, onClick, type, className }) {
         button {
           padding: 15px;
           margin: auto;
+          margin-bottom: 20px;
           border: solid thin orangered;
           width: 100%;
           font-size: 1.3rem;

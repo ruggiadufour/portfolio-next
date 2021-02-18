@@ -1,14 +1,15 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import About from "../Components/Home/About";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <link rel="icon" href="images/favicon.svg" />
         <meta
-          name="description"
+          name="description" 
           content="Angel Ruggia Dufour's portfolio. Here you are going to know all about him (his projects, resume, blogs, etc.)."
         />
         <meta
