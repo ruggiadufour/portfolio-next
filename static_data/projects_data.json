@@ -13,7 +13,7 @@
       "title": "Sports Club shifts",
       "long_desc": "Web-site about pools shifts and futbol, voleyball and basket fields shifts. The web site was made with React.js, Material UI, Strapi.js and deployed on Heroku. \n It was requested by the city hall of a small town.",
       "short_desc": "Shift website for sports fields.",
-      "site": "https://complejodeportivo-sb.com.ar",
+      "site": "",
       "repo": "",
       "src":"/images/complejo.png",
       "url":"/sports-club-shifts"
