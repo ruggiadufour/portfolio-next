@@ -2,11 +2,11 @@
   "primary": [
     {
       "title": "Servia",
-      "long_desc": "The final project for my university degree in system analyst, is about a home services search website, there people can find workers of plumbing, builders, maids, etc. I have developed it with aclass mate. We chose React.js and Material UI for frontendand Strapi (headless CMS) and MySQL for backend.",
+      "long_desc": "The final project for my university degree in system analyst, is about a home services search website, there people can find workers of plumbing, builders, maids, etc. I have developed it with a class mate. We chose React.js and Material UI for frontendand Strapi (headless CMS), Socket.IO and MySQL for backend.",
       "short_desc": "Web-app for publishing and requesting home services",
-      "site": "https://instyc.github.io/App-Servicios/",
+      "site": "https:servia.angelruggia.ar",
       "repo": "",
-      "src":"/images/servia.png",
+      "src":"/images/servia1.png",
       "url":"/servia"
     },
     {
@@ -25,15 +25,6 @@
       "long_desc": "Black-jack game The classic black-jack developed as a web-app, it is built with React.js, Material UI, Express.js and Socket.io.",
       "short_long_desc": "",
       "site": "https://ruggiadufour.github.io/BlackJack/",
-      "repo": "",
-      "src":"",
-      "url":"/"
-    },
-    {
-      "title": "Learning material system",
-      "long_desc": "WEB single page application, developed with React.js, Express.js and Material UI. This system allows to save study material (pdf, docx, etc.) and to filter by name or properties. I made the whole system, since frontend to backend, the frontend I was able to make on my own easily but the backend I had to learn a little bit of API rest with express.",
-      "short_desc": "",
-      "site": "",
       "repo": "",
       "src":"",
       "url":"/"

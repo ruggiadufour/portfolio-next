@@ -95,7 +95,7 @@ export default function SportClub() {
             that's why this took us around 2 months to finish.
           </p>
           <Image
-            src="/images/servia.png"
+            src="/images/servia1.png"
             layout="intrinsic"
             width={1200}
             height={600}

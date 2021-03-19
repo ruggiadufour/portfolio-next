@@ -7,7 +7,7 @@ export default function Project({ title, long_desc, site }) {
       <p>
         {long_desc}
         {site !== "" && (
-          <a href={site} target="_blank">
+          <a className="color-text" href={site} target="_blank">
             See more.
           </a>
         )}

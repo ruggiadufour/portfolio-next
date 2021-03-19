@@ -42,7 +42,7 @@ export default function Resume() {
                 />
                
                 <h2>Angel Ruggia Dufour</h2>
-                <p>System Analyst - Front-end developer</p>
+                <span className="color-text-2">System Analyst - Front-end developer</span>
               </div>
               <div className={styles.p_info}>
                 <Image
@@ -206,17 +206,27 @@ export default function Resume() {
           opacity: 0.8;
           color: ${constants.dark_theme.colors.secondary};
         }
-        :global(h2, a, .paragraph_info){
+
+        :global( a, .paragraph_info){
           font-size: 17px;
           opacity: 0.8;
-          color: ${constants.dark_theme.colors.secondary};
+          color: black;
+          font-weight: 500;
+          margin-left: 5px;
+        }
+
+        :global(h2){
+          font-size: 17px;
+          opacity: 0.8;
+          color:  ${constants.dark_theme.colors.primary};
+          font-weight: 500;
           margin-left: 5px;
         }
        
         :global(h3) {
-          color: ${constants.dark_theme.colors.third};
+          color: ${constants.dark_theme.colors.primary};
           font-size: 15px;
-          font-weight: 400;
+          font-weight: 500;
           opacity: 0.8;
         }
         :global(p,
@@ -231,7 +241,7 @@ export default function Resume() {
         hr {
           margin: 0;
           padding: 0;
-          border: 1px solid ${constants.dark_theme.colors.primary};
+          border: 1px solid ${constants.dark_theme.colors.third};
         }
       `}</style>
     </div>
