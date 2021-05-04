@@ -32,7 +32,7 @@ export default function SportClub() {
             <div className="image-link">
               <a
                 href="https://github.com/ruggiadufour/Servia-Frontend"
-                target="_blanket"
+                target="_blank"
               >
                 <Image
                   src="/images/orange-github.png"
@@ -43,7 +43,7 @@ export default function SportClub() {
               </a>
             </div>
             <div className="image-link">
-              <a href="https:servia.angelruggia.ar" target="_blanket">
+              <a href="https://servia.angelruggia.ar" target="_blank">
                 <Image
                   src="/images/goto.png"
                   layout="intrinsic"
