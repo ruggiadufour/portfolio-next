@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 import { useEffect, useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
-  const [theme, setTheme] = useState(true)
+  const [theme, setTheme] = useState(false)
 
   function changeTheme(){
     setTheme(!theme)

@@ -18,7 +18,7 @@ export default function Home() {
         />
         <meta name="author" content="Angel Ruggia Dufour" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Angel Ruggia Dufour Front-end developer</title>
+        <title>Angel Ruggia Dufour - Front-End Developer</title>
       </Head>
       <main>
         <About />

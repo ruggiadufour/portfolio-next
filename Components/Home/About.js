@@ -14,8 +14,9 @@ export default function About() {
       <Section add_class="intro">
         <div className="flex_items is-rounded">
           <Image
-            src="/images/svg/profile.svg"
+            src="/images/profile2.jpg"
             alt="Profile"
+            layout="fixed"
             width={128}
             height={128}
           />
@@ -46,7 +47,7 @@ export default function About() {
               Peña Chaco - Argentina. I like computing, programming and solving
               problems whether they are mathematical, logical or whatever and
               above all I like to learn new things. Right now I'm looking for a
-              job as a Front-end developer or System analyst.
+              job as a Front-End developer or System Analyst/Functional Analyst.
             </p>
           </div>
 
@@ -91,6 +92,15 @@ export default function About() {
       </Section>
 
       <style jsx>{`
+        .is-rounded{
+          overflow: hidden;
+          border-radius: 50%;
+          background-color: red;
+          width: 128px;
+          height: 128px;
+          margin: auto;
+          border: solid 2px ${constants.dark_theme.colors.secondary};
+        }
         #hello {
           z-index: 100;
         }

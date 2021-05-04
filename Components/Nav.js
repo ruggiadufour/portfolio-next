@@ -76,9 +76,20 @@ export default function Nav({ changeTheme, theme }) {
                 <a className="navbar-item color-text">Contact</a>
               </Link>
 
-              <Link href="/resume">
-                <a className="navbar-item color-text">Resume</a>
-              </Link>
+              <a
+                className="navbar-item color-text"
+                href="/docs/CV english.pdf"
+                target="_blank"
+              >
+                Resume (EN)
+              </a>
+              <a
+                className="navbar-item color-text"
+                href="/docs/CV español.pdf"
+                target="_blank"
+              >
+                Resume (ES)
+              </a>
             </div>
           </div>
         </div>

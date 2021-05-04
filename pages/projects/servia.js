@@ -43,7 +43,7 @@ export default function SportClub() {
               </a>
             </div>
             <div className="image-link">
-              <a href="https://instyc.github.io/App-Servicios/" target="_blanket">
+              <a href="https:servia.angelruggia.ar" target="_blanket">
                 <Image
                   src="/images/goto.png"
                   layout="intrinsic"
@@ -56,9 +56,7 @@ export default function SportClub() {
 
           <p className="is-size-4 subtitle color-text-3">
             The final project for my university degree in system analyst. It was
-            developed by me and my colleague Ferrán Solís Chorvat. Our plan was
-            to start a startup, but now the project is in standby due lack of
-            time.
+            developed by me and my colleague Ferrán Solís Chorvat. 
           </p>
 
           <hr className="background-color2" />
@@ -119,13 +117,13 @@ export default function SportClub() {
             height={600}
           />
           <hr className="background-color2" />
-          <h2 className="is-size-3 subtitle color-text-2">Next:</h2>
+          {/* <h2 className="is-size-3 subtitle color-text-2">Next:</h2>
           <p className="is-size-4 subtitle color-text-3">
             As I said the project is in standby, so I hope soon I will continue
             with it, I believe there some things we harcoded and I want to
             refactor them. And also I want to migrate to Next.js for SEO stuff,
             and when I do all that I will deploy and advertise it in my city.
-          </p>
+          </p> */}
         </div>
       </Section>
 
