@@ -76,7 +76,7 @@ export default function Nav({ changeTheme, theme }) {
                 <a className="navbar-item color-text">Contact</a>
               </Link>
 
-              <a
+              {/* <a
                 className="navbar-item color-text"
                 href="/docs/CV english.pdf"
                 target="_blank"
@@ -89,7 +89,7 @@ export default function Nav({ changeTheme, theme }) {
                 target="_blank"
               >
                 Resume (ES)
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -103,12 +103,14 @@ export default function Nav({ changeTheme, theme }) {
           -moz-user-select: none;
           -khtml-user-select: none;
           -webkit-user-select: none;
+          transition: left .5s, transform .5s;
         }
         .left {
           left: 0;
         }
         .right {
-          right: 0;
+          left: calc(100% - 27px);
+          transform: rotate(360deg);
         }
         .select_theme {
           cursor: pointer;

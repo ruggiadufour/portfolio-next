@@ -1,22 +1,25 @@
 import Head from "next/head";
-import Image from 'next/image'
+import Image from "next/image";
 import styles from "../../styles/Resume.module.css";
-import constants from '../../styles/constants'
-import Tool from '../../Components/Resume/Tool'
-import Project from '../../Components/Resume/Project'
-import tools_data from '../../static_data/tools_data.json'
-import projects_data from '../../static_data/projects_data.json'
+import constants from "../../styles/constants";
+import Tool from "../../Components/Resume/Tool";
+import Project from "../../Components/Resume/Project";
+import tools_data from "../../static_data/tools_data.json";
+import projects_data from "../../static_data/projects_data.json";
 
 export default function Resume() {
-    const tools = tools_data
-    const projects = [...projects_data.primary, ...projects_data.extra];
+  const tools = tools_data;
+  const projects = [...projects_data.primary, ...projects_data.extra];
 
-    return (
+  return (
     <div>
       <Head>
         <meta charSet="UTF-8" />
         <link rel="icon" href="images/svg/profile.svg" />
-        <meta name="description" content="Know all about Angel Ruggia Dufour, here you'll find all the information about his career and life." />
+        <meta
+          name="description"
+          content="Know all about Angel Ruggia Dufour, here you'll find all the information about his career and life."
+        />
         <meta
           name="keywords"
           content="Ruggia, Dufour, Angel, Resume, Curriculum, Vitae, Experience, Knowledge, Tools"
@@ -25,7 +28,10 @@ export default function Resume() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Resume: Angel Ruggia Dufour</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main className={`${styles.main} background-color4`}>
@@ -33,16 +39,17 @@ export default function Resume() {
           <div className={styles.dashboard}>
             <div>
               <div className={styles.user}>
-              
                 <Image
                   src="/images/svg/profile.svg"
                   alt="profile-image"
                   width={150}
                   height={150}
                 />
-               
+
                 <h2>Angel Ruggia Dufour</h2>
-                <span className="color-text-2">System Analyst - Front-end developer</span>
+                <span className="color-text-2">
+                  System Analyst - Front-end developer
+                </span>
               </div>
               <div className={styles.p_info}>
                 <Image
@@ -51,7 +58,9 @@ export default function Resume() {
                   height={80}
                   alt="location-icon"
                 />
-                <p className="paragraph_info">Presidencia Roque Saenz Peña - Chaco - Argentina</p>
+                <p className="paragraph_info">
+                  Presidencia Roque Saenz Peña - Chaco - Argentina
+                </p>
               </div>
               <div className={styles.p_info}>
                 <Image
@@ -131,9 +140,9 @@ export default function Resume() {
               <div className={styles.card}>
                 <h2>Tools</h2>
                 <div className={styles.card_info}>
-                  {
-                    tools.map((tool,i)=><Tool key={i} {...tool}/>)
-                  }
+                  {tools.map((tool, i) => (
+                    <Tool key={i} {...tool} />
+                  ))}
                 </div>
               </div>
 
@@ -142,9 +151,9 @@ export default function Resume() {
               <div className={styles.card}>
                 <h2>Projects</h2>
                 <div className={styles.card_info}>
-                  {
-                    projects.map((project,i)=><Project key={i} {...project}/>)
-                  }
+                  {projects.map((project, i) => (
+                    <Project key={i} {...project} />
+                  ))}
                 </div>
               </div>
 
@@ -193,8 +202,7 @@ export default function Resume() {
       </main>
 
       <style jsx>{`
-        
-        #glass{
+        #glass {
           background: ${constants.dark_theme.colors.background4};
         }
         :global(a:visited) {
@@ -207,7 +215,7 @@ export default function Resume() {
           color: ${constants.dark_theme.colors.secondary};
         }
 
-        :global( a, .paragraph_info){
+        :global(a, .paragraph_info) {
           font-size: 17px;
           opacity: 0.8;
           color: black;
@@ -215,22 +223,21 @@ export default function Resume() {
           margin-left: 5px;
         }
 
-        :global(h2){
+        :global(h2) {
           font-size: 17px;
           opacity: 0.8;
-          color:  ${constants.dark_theme.colors.primary};
+          color: ${constants.dark_theme.colors.primary};
           font-weight: 500;
           margin-left: 5px;
         }
-       
+
         :global(h3) {
           color: ${constants.dark_theme.colors.primary};
           font-size: 15px;
           font-weight: 500;
           opacity: 0.8;
         }
-        :global(p,
-        li) {
+        :global(p, li) {
           text-align: justify;
           font-size: 13px;
           color: floralwhite;

@@ -20,13 +20,13 @@
     "text": "Next.js"
   },
   {
+    "src": "/images/vuejs.png",
+    "alt": "vue-logo",
+    "text": "Vue.js"
+  },
+  {
     "src": "/images/strapi.png",
     "alt": "strapi-logo",
     "text": "Strapi"
-  },
-  {
-    "src": "/images/mysql_workbench.png",
-    "alt": "mysql-workbench-logo",
-    "text": "MySQL Workbench"
   }
 ]

@@ -46,8 +46,7 @@ export default function About() {
               student of system engineering, living in Presidencia Roque Saenz
               Peña Chaco - Argentina. I like computing, programming and solving
               problems whether they are mathematical, logical or whatever and
-              above all I like to learn new things. Right now I'm looking for a
-              job as a Front-End developer or System Analyst/Functional Analyst.
+              above all I like to learn new things.
             </p>
           </div>
 
